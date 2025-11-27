@@ -1,3 +1,4 @@
+/* Reset */
 * {
 	margin: 0;
 	padding: 0;
@@ -18,26 +19,44 @@ video {
 }
 
 .reel-page {
-	height: 100vh; /* ti incuriosisce? */
+	height: 100vh;
 	max-width: 512px;
 	min-width: 400px;
 	position: relative;
 }
 
+/* Header */
 .reel-header {
-	position: absolute;
+	display: flex;
+	justify-content: space-around;
 	align-items: center;
-	justify-content: space-between;
+	gap: 70px;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
+}
 
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
+.header-btn {
+
+	font-size: 24px;
+	background-color: transparent;
+	color: #fff;
+}
+
+ul {
+	gap: 5px;
+	list-style: none;
+	display: flex;
+}
+
+
+
+a {
+	color: #fff;
 }
 
 /* Footer */
-
 footer {
 	position: absolute;
 	left: 0;
@@ -78,6 +97,10 @@ da rimuovere una volta concluso
 .debug .reel-header {
 	min-height: 50px;
 	border: 2px dashed #fff;
+}
+
+.debug {
+	border: 2px solid red;
 }
 
 /* --------------------- */
