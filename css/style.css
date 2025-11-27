@@ -10,6 +10,11 @@ body {
 	font-family: 'TikTok Sans', sans-serif;
 }
 
+button {
+	background-color: transparent;
+	border: none;
+}
+
 video {
 	height: 100%;
 	width: 100%;
@@ -29,7 +34,7 @@ video {
 .reel-header {
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-end;
 	gap: 70px;
 	position: absolute;
 	top: 0;
@@ -38,22 +43,50 @@ video {
 }
 
 .header-btn {
-
 	font-size: 24px;
-	background-color: transparent;
 	color: #fff;
 }
 
 ul {
+	translate: 0 -5px;
 	gap: 5px;
 	list-style: none;
 	display: flex;
 }
 
-
-
 a {
+	text-decoration: none;
 	color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 0 16px;
+	position: absolute;
+	right: 0;
+	top: 40%;
+	width: 80px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.sidebar button {
+	color: #fff;
+	font-size: 32px;
+}
+
+.profile-btn {
+	translate: -3px;
+	height: 50px;
+	width: 50px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	background-image: url(../assets/img/boolean_logo.png);
+	background-size: contain;
 }
 
 /* Footer */
@@ -63,17 +96,6 @@ footer {
 	right: 0;
 	bottom: 0;
 	color: #fff;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
-
-/* Sidebar */
-.sidebar {
-	padding: 0 16px;
-	position: absolute;
-	right: 0;
-	top: 40%;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
