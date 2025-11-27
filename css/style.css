@@ -10,9 +10,14 @@ body {
 	font-family: 'TikTok Sans', sans-serif;
 }
 
+/* Utils */
 button {
 	background-color: transparent;
 	border: none;
+}
+
+ul {
+	list-style: none;
 }
 
 video {
@@ -36,6 +41,7 @@ video {
 	justify-content: space-around;
 	align-items: flex-end;
 	gap: 70px;
+	height: 7vh;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -47,11 +53,10 @@ video {
 	color: #fff;
 }
 
-ul {
+header ul {
+	display: flex;
 	translate: 0 -5px;
 	gap: 5px;
-	list-style: none;
-	display: flex;
 }
 
 a {
@@ -64,14 +69,14 @@ a {
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 25px;
 	padding: 0 16px;
 	position: absolute;
 	right: 0;
 	top: 40%;
 	width: 80px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .sidebar button {
@@ -96,33 +101,44 @@ footer {
 	right: 0;
 	bottom: 0;
 	color: #fff;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
 }
 
-/* ---------------------
-Regole per evidenziare i blocchi 
-da rimuovere una volta concluso
---------------------- */
-.debug footer {
-	min-height: 100px;
-	border: 2px dashed #fff;
+.description {
+	max-width: 75%;
+	padding: 15px;
 }
 
-.debug .sidebar {
-	min-width: 80px;
-	min-height: 450px;
-	border: 2px dashed #ff0;
+.publisher {
+	margin-bottom: 5px;
 }
 
-.debug .reel-header {
-	min-height: 50px;
-	border: 2px dashed #fff;
+.footer-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000;
+	height: 10vh;
+	font-size: 28px;
+    text-align: center;
 }
 
-.debug {
-	border: 2px solid red;
+li {
+	flex: 1 1 0;
 }
 
-/* --------------------- */
+li > span {
+	font-size: 12px;
+	display: block;
+}
+
+li .add-square {
+	line-height: 30px;
+	height: 35px;
+	translate: 0 -7px;
+	margin: 0 auto;
+	width: 45%;
+	color: #000;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: -3px 0px 1px #19FFFF, 3px 0 1px #FF00FF;
+}

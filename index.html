@@ -15,49 +15,72 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <!-- Container della pagina, necessario per via del layout particolare -->
-  <div class="reel-page debug">
+  <div class="reel-page">
     <video src="assets/video/coder.mp4" autoplay muted loop></video>
-
     <!-- Header -->
     <header class="reel-header">
-      <button class="header-btn debug"><i class="bi bi-play-btn"></i></button>
-      <nav class="header-navbar debug">
+      <button class="header-btn"><i class="bi bi-play-btn"></i></button>
+      <nav class="header-navbar">
         <ul>
           <li><a href="#">Esplora</a></li>
           <li><a href="#">Seguiti</a></li>
           <li><a href="#">Per te</a></li>
         </ul>
       </nav>
-      <button class="header-btn debug"><i class="bi bi-search"></i></button>
+      <button class="header-btn"><i class="bi bi-search"></i></button>
     </header>
-
     <!-- Sidebar -->
     <div class="sidebar">
       <button class="profile-btn"></button>
-      <div>
+      <div class="btn-container">
         <button><i class="bi bi-heart-fill"></i></button>
-        <span>588</span>
+        <span class="btn-stat">588</span>
       </div>
-      <div>
+      <div class="btn-container">
         <button><i class="bi bi-chat-dots-fill"></i></button>
-        <span>13</span>
+        <span class="btn-stat">13</span>
       </div>
-      <div>
+      <div class="btn-container">
         <button><i class="bi bi-bookmark-fill"></i></button>
-        <span>638</span>
+        <span class="btn-stat">638</span>
       </div>
-      <div>
+      <div class="btn-container">
         <button><i class="bi bi-arrow-up-right-square-fill"></i></button>
-        <span>491</span>
+        <span class="btn-stat">491</span>
       </div>
     </div>
 
     <!-- Footer -->
     <footer>
-
+      <section class="description">
+        <h4 class="publisher">boolean.careers</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni facilis... <b>Vedi altro</b></p>
+      </section>
+      <nav>
+        <ul class="footer-nav">
+          <li>
+            <a href="#"><i class="bi bi-house-fill"></i></a>
+            <span>Home</span>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-people"></i></a>
+            <span>Amici</span>
+          </li>
+          <li>
+            <a href="#"><div class="add-square">+</div></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-chat-square"></i></a>
+            <span>Posta in arrivo</span>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-person"></i></a>
+            <span>Profilo</span>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </div>
 </body>
