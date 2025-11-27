@@ -58,27 +58,27 @@ video {
 	color: #fff;
 }
 
-header ul {
+.header-menu {
 	display: flex;
 	translate: 0 -3px;
 	gap: 15px;
 	font-size: 18px;
 }
 
-header a {
+.header-menu a {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-header li {
+.header-menu li {
 	position: relative;
 }
 
-header li:last-child a {
+.header-menu li:last-child a {
 	color: #fff;
 }
 
 /* Bonus */
-header li:last-child::after {
+.header-menu li:last-child::after {
 	content: "—";
 	color: #fff;
 	position: absolute;
@@ -128,7 +128,7 @@ header li:nth-child(2)::after {
 	position: relative;
 }
 
-/* bonus */
+/* Bonus */
 .profile-btn::after {
 	content: "+";
 	width: 25px;
@@ -142,22 +142,27 @@ header li:nth-child(2)::after {
     right: 11px;
 }
 
+/* Description */
+.description {
+	color: #fff;
+	position: absolute;
+	left: 15px;
+	bottom: 100px;
+	max-width: 75%;
+}
+
+.publisher {
+	margin-bottom: 5px;
+}
+
 /* Footer */
 footer {
+	position: relative;
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	color: #fff;
-}
-
-.description {
-	max-width: 75%;
-	padding: 15px;
-}
-
-.publisher {
-	margin-bottom: 5px;
 }
 
 .footer-nav {
@@ -216,4 +221,13 @@ footer {
 	font-size: 12px;
 	position: absolute;
 	right: 25px;
+}
+
+/* extra */
+.header-menu a:hover {
+	color: #fff;
+}
+
+.footer-nav li:hover > a {
+	color: #fff;
 }
