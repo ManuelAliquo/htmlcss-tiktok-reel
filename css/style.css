@@ -20,6 +20,11 @@ ul {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
 video {
 	height: 100%;
 	width: 100%;
@@ -55,13 +60,41 @@ video {
 
 header ul {
 	display: flex;
-	translate: 0 -5px;
-	gap: 5px;
+	translate: 0 -3px;
+	gap: 15px;
+	font-size: 18px;
 }
 
-a {
-	text-decoration: none;
+header a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+header li {
+	position: relative;
+}
+
+header li:last-child a {
 	color: #fff;
+}
+
+/* Bonus */
+header li:last-child::after {
+	content: "—";
+	color: #fff;
+	position: absolute;
+	font-size: 28px;
+	font-weight: 500;
+	bottom: -20px;
+	right: 10px;
+}
+
+header li:nth-child(2)::after {
+	content: "•";
+	color: rgba(255, 65, 65, 0.5);
+	font-size: 26px;
+	position: absolute;
+	bottom: 10px;
+	right: -10px;
 }
 
 /* Sidebar */
@@ -85,13 +118,28 @@ a {
 }
 
 .profile-btn {
-	translate: -3px;
+	translate: -3px -10px;
 	height: 50px;
 	width: 50px;
 	border: 2px solid #fff;
 	border-radius: 50%;
 	background-image: url(../assets/img/boolean_logo.png);
 	background-size: contain;
+	position: relative;
+}
+
+/* bonus */
+.profile-btn::after {
+	content: "+";
+	width: 25px;
+	height: 25px;
+	font-size: 24px;
+	color: #fff;
+	background-color: rgb(255, 60, 60);
+	border-radius: 50%;
+	position: absolute;
+	bottom: -15px;
+    right: 11px;
 }
 
 /* Footer */
@@ -122,16 +170,24 @@ footer {
     text-align: center;
 }
 
-li {
+.home  * {
+	color: #fff;
+}
+
+.nav-item {
 	flex: 1 1 0;
 }
 
-li > span {
+.footer-nav a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-item > span {
 	font-size: 12px;
 	display: block;
 }
 
-li .add-square {
+.nav-item .add-square {
 	line-height: 30px;
 	height: 35px;
 	translate: 0 -7px;
@@ -140,5 +196,24 @@ li .add-square {
 	color: #000;
 	background-color: #fff;
 	border-radius: 10px;
+}
+
+/* bonus */
+.nav-item .add-square {
 	box-shadow: -3px 0px 1px #19FFFF, 3px 0 1px #FF00FF;
+}
+
+.mail {
+	position: relative;
+}
+
+.mail > a::after {
+	content: "19";
+	color: #fff;
+	padding: 1px 5px;
+	background-color: rgb(255, 60, 60);
+	border-radius: 10px;
+	font-size: 12px;
+	position: absolute;
+	right: 25px;
 }
